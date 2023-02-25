@@ -126,7 +126,6 @@ router.delete("/goods/:goodsId/cart", async(req, res) => {
   res.json({result:"success"});
 });
 
-
 // 상품 생성 API
 const Goods = require("../schemas/goods.js");
 router.post("/goods/", async (req, res) => {
@@ -145,5 +144,6 @@ router.post("/goods/", async (req, res) => {
 
   res.json({ goods: createdGoods });
 });
+
 
 module.exports = router;
